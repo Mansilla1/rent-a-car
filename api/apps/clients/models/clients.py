@@ -17,6 +17,10 @@ class Client(models.Model):
         null=True,
         db_column='apellido',
     )
+    status = models.BooleanField(
+        default=True,
+        db_column='client_disponible',
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

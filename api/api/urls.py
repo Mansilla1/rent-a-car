@@ -25,4 +25,8 @@ urlpatterns = [
         'api/v1/',
         include('apps.cars.urls'),
     ),
+    path(
+        'api/v1/',
+        include('apps.clients.urls'),
+    ),
 ]
